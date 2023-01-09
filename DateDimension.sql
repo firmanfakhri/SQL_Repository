@@ -24,8 +24,8 @@ DATEPART(quarter,date) quarter,
 cast(year(date) as varchar)+
 case when DATEPART(quarter,date)=1 then 'Q1'
      when DATEPART(quarter,date)=2 then 'Q2'
-	 when DATEPART(quarter,date)=3 then 'Q3'
-	 when DATEPART(quarter,date)=4 then 'Q4'
+     when DATEPART(quarter,date)=3 then 'Q3'
+     when DATEPART(quarter,date)=4 then 'Q4'
 end as [QuarterID],
 MONTH(date) as month,
 cast(year(date) as varchar)+
